@@ -14,8 +14,6 @@ header img {
     list-style: none;
     justify-content: space-between;
     align-items: flex-end;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 .list-center {
@@ -32,12 +30,17 @@ header img {
     padding: 0 20px 0 20px;
 }
 
+.center-list:hover {
+    color: #1A75E8;
+}
+
 .logins {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
     padding-left: 261px;
+    border: none;
 }
 
 .logins button {
@@ -49,4 +52,11 @@ header img {
     background: #1A75E8;
     color: #FFFFFF;
     border-radius: 5px;
+    border: none;
+}
+
+@media (min-width: 1024px) {
+    .center-list {
+        font-size: 14px;
+    }
 }
