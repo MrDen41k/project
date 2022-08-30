@@ -45,18 +45,21 @@ body {
                 color: #1A75E8;
             }
         }
-
-        
-
     }
+
+   
+
 
     .btn_group {
         display: flex;
         align-items: center;
         column-gap: 40px;
+        font-size: 16px;
+
         button {
             border: none;
             background: transparent;
+
         }
 
         .primary {
@@ -68,18 +71,10 @@ body {
     }
 }
 
-@media (max-width: 500px) {
-    .menu {
-        display: none;
-    }
+    // mobile menu \\
 
-    .header .btn_group {
+    #toggle {
         display: none;
-    }
-
-    #toggle:checked ~ nav {
-        top: 80px;
-        opacity: 1;
     }
 
     .toggle_btn span {
@@ -112,8 +107,16 @@ body {
                 transition: top .4s ;
         }
     } 
-    
-}
+
+    @media (max-width: 425px) {
+        .menu {
+            display: none;
+        }
+
+        .header .btn_group {
+            display: none;
+        }
+    }
 
 /* @media (min-width: 768px) {
     .toggle_btn {
@@ -129,11 +132,7 @@ body {
     } 
 } */
 
-@media (min-width: 768px) {
-    #toggle {
-        display: none;
-    }
-    
+@media (min-width: 625px) {
     .toggle_btn {
         display: none;
     }
